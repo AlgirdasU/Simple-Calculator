@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
+:root {
+  --orange: #f76707;
+  --blue: #15aabf;
+  --very-dark-gray: #343a40;
+  --light-gray: #e8e9ed;
+  --white: #ffffff;
+  --major-font: "Orbitron", sans-serif;
+  --font-w-regular: 400;
+  --font-w-medium: 500;
+  --font-w-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*:focus-visible {
+  outline: 0.3rem solid rgb(204, 204, 204);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+span,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+/*# sourceMappingURL=style.css.map */
