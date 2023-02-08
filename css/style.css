@@ -1,8 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap");
 :root {
   --orange: #f76707;
+  --orange-hover: #e05b02;
   --blue: #15aabf;
-  --very-dark-gray: #343a40;
+  --blue-hover: #049db1;
+  --very-dark-gray: rgb(52, 58, 64);
+  --very-dark-gray-hover: rgb(37, 40, 43);
   --light-gray: #e8e9ed;
   --white: #ffffff;
   --major-font: "Orbitron", sans-serif;
@@ -37,6 +40,153 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1;
+  font-family: var(--major-font);
+}
+
+.container {
+  max-width: 100vw;
+  min-height: 100vh;
+  margin-top: 7rem;
+}
+
+.heading-primary {
+  text-align: center;
+  font-size: 3rem;
+  padding: 0 1rem 2rem;
+}
+
+.main {
+  padding: 0 1rem 0;
+}
+
+.calculator {
+  margin: 0 auto;
+  max-width: 38rem;
+  max-height: 50rem;
+  border: 2px solid var(--very-dark-gray);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background-color: #aaafb6;
+  box-shadow: 3px 3px 7px 0px rgb(143, 143, 143), inset 3px 3px 10px 2px rgb(199, 199, 199);
+}
+.calculator__container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.calculator__screen-box {
+  background-color: var(--very-dark-gray);
+  height: 6rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-radius: 0.5rem;
+  border: 2px solid var(--white);
+  box-shadow: inset 0px 0px 10px 1.5px black;
+  grid-column: 1/-1;
+  margin-bottom: 1rem;
+}
+.calculator__result {
+  color: var(--white);
+  font-size: 4rem;
+  margin: 0.5rem;
+}
+
+.btn {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 0.4rem;
+}
+.btn button {
+  min-width: 4.5rem;
+  min-height: 4rem;
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: var(--font-w-medium);
+  border: none;
+  letter-spacing: 0.2rem;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.btn__7 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.btn__number {
+  background-color: var(--light-gray);
+  box-shadow: 1.2px 1.2px 3px 0 rgba(0, 0, 0, 0.4);
+  transition: all 100ms ease;
+}
+.btn__number:hover {
+  background-color: var(--white);
+  box-shadow: 1.2px 1.2px 3px 0 rgba(0, 0, 0, 0.4);
+}
+.btn__number:active {
+  transform: scale(0.97);
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+.btn__operator {
+  background-color: var(--orange);
+  color: var(--white);
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+  transition: all 100ms ease;
+}
+.btn__operator:hover {
+  background-color: var(--orange-hover);
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+}
+.btn__operator:active {
+  transform: scale(0.97);
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.4);
+}
+.btn__result {
+  background-color: var(--very-dark-gray);
+  color: var(--white);
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+  transition: all 100ms ease;
+}
+.btn__result:hover {
+  background-color: var(--very-dark-gray-hover);
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+}
+.btn__result:active {
+  transform: scale(0.97);
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.4);
+}
+.btn__calculat {
+  background-color: var(--blue);
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+  transition: all 100ms ease;
+}
+.btn__calculat:hover {
+  background-color: var(--blue-hover);
+  box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.4);
+}
+.btn__calculat:active {
+  transform: scale(0.97);
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.4);
+}
+.btn__backspace-img {
+  width: 2.5rem;
+  height: 2.2rem;
+}
+.btn__dot {
+  background-color: var(--light-gray);
+  box-shadow: 1.2px 1.2px 3px 0 rgba(0, 0, 0, 0.4);
+  transition: all 100ms ease;
+}
+.btn__dot:hover {
+  background-color: var(--white);
+  box-shadow: 1.2px 1.2px 3px 0 rgba(0, 0, 0, 0.4);
+}
+.btn__dot:active {
+  transform: scale(0.97);
+  box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.4);
+}
+.btn__square-root {
+  width: 2.5rem;
+  height: 2.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

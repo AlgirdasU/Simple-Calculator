@@ -6,239 +6,289 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Simple Calculator" />
 
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="queries.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- <noscript> -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap"
+        rel="stylesheet"
+      /> -->
+    <!-- </noscript> -->
 
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="queries.css" /> -->
     <script defer src="script.js"></script>
 
-    <link rel="shortcut icon" type="image/png" href="images/" />
     <title>Calculator</title>
   </head>
   <body>
-    <h1 class="heading-primary">Calculator</h1>
-    <main class="main">
-      <section class="calculator">
-        <div class="calculator_container">
-          <div class="calculator__screen-box">
-            <input
-              type="number"
-              name="screen"
-              aria-label="Calculation result"
-            />
+    <div class="container">
+      <h1 class="heading-primary">Calculator</h1>
+      <main class="main">
+        <section class="calculator">
+          <div class="calculator__container">
+            <div class="calculator__screen-box">
+              <span class="calculator__result">0</span>
+            </div>
+            <div class="btn">
+              <button
+                type="button"
+                value="7"
+                aria-label="number"
+                class="btn__number btn__7"
+              >
+                7
+              </button>
+              <button
+                type="button"
+                value="8"
+                aria-label="number"
+                class="btn__number btn__8"
+              >
+                8
+              </button>
+              <button
+                type="button"
+                value="9"
+                aria-label="number"
+                class="btn__number btn__9"
+              >
+                9
+              </button>
+              <button
+                type="button"
+                value="/"
+                aria-label="division"
+                class="btn__operator btn__division"
+              >
+                /
+              </button>
+              <button
+                type="button"
+                value="mr"
+                aria-label="memory recall"
+                class="btn__result btn__recall"
+              >
+                MR
+              </button>
+              <button
+                type="button"
+                value="4"
+                aria-label="number"
+                class="btn__number btn__4"
+              >
+                4
+              </button>
+              <button
+                type="button"
+                value="5"
+                aria-label="number"
+                class="btn__number btn__5"
+              >
+                5
+              </button>
+              <button
+                type="button"
+                value="6"
+                aria-label="number"
+                class="btn__number btn__6"
+              >
+                6
+              </button>
+              <button
+                type="button"
+                value="*"
+                aria-label="multiplication"
+                class="btn__operator btn__multiplication"
+              >
+                *
+              </button>
+              <button
+                type="button"
+                value="m+"
+                aria-label="memory plus"
+                class="btn__result btn__plus"
+              >
+                M+
+              </button>
+              <button
+                type="button"
+                value="1"
+                aria-label="number"
+                class="btn__number btn__1"
+              >
+                1
+              </button>
+              <button
+                type="button"
+                value="2"
+                aria-label="number"
+                class="btn__number btn__2"
+              >
+                2
+              </button>
+              <button
+                type="button"
+                value="3"
+                aria-label="number"
+                class="btn__number btn__3"
+              >
+                3
+              </button>
+              <button
+                type="button"
+                value="-"
+                aria-label="subtraction"
+                class="btn__operator btn__subtraction"
+              >
+                -
+              </button>
+              <button
+                type="button"
+                value="m-"
+                aria-label="memory minus"
+                class="btn__result btn__minus"
+              >
+                M-
+              </button>
+              <button
+                type="button"
+                value="0"
+                aria-label="number"
+                class="btn__number btn__0"
+              >
+                0
+              </button>
+              <button
+                type="button"
+                value="."
+                aria-label="dot"
+                class="btn__decimal btn__dot"
+              >
+                .
+              </button>
+              <button
+                type="button"
+                value="="
+                aria-label="calculate"
+                class="btn__operator btn__calculat"
+              >
+                =
+              </button>
+              <button
+                type="button"
+                value="+"
+                aria-label="addition"
+                class="btn__operator btn__addition"
+              >
+                +
+              </button>
+              <button
+                type="button"
+                value="mc"
+                aria-label="memory clear"
+                class="btn__result btn__clear"
+              >
+                MC
+              </button>
+              <button
+                type="button"
+                value="sqrt"
+                aria-label="square root"
+                class="btn__operator btn__sqrt"
+              >
+                <svg
+                  fill="#000000"
+                  width="80px"
+                  height="80px"
+                  viewBox="0 0 24 24"
+                  class="btn__square-root"
+                  data-name="Flat Line"
+                  xmlns="http://www.w3.org/2000/svg"
+                  
+                >
+                  <path
+                    id="primary"
+                    d="M3,12H4.31a1,1,0,0,1,.93.65L8,20,10.85,4.82a1,1,0,0,1,1-.82H21"
+                    style="
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-linejoin: round;
+                      stroke-width: 2;
+                    "
+                  ></path>
+                </svg>
+              </button>
+              <button
+                type="button"
+                value="%"
+                aria-label="percentage"
+                class="btn__operator btn__percentage"
+              >
+                %
+              </button>
+              <button
+                type="button"
+                value="+/-"
+                aria-label="plus minus toggles"
+                class="btn__operator btn__plus-minus"
+              >
+                +/-
+              </button>
+              <button
+                type="button"
+                value="backspace"
+                aria-label="backspace"
+                class="btn__operator btn__backspace"
+              >
+                <svg
+                  width="800px"
+                  height="800px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="btn__backspace-img"
+                >
+                  <path
+                    d="M7.91987 5C7.33602 5 6.78132 5.25513 6.40136 5.69842L2.11564 10.6984C1.47366 11.4474 1.47366 12.5526 2.11564 13.3016L6.40136 18.3016C6.78132 18.7449 7.33602 19 7.91987 19L19 19C20.1046 19 21 18.1046 21 17L21 7C21 5.89543 20.1046 5 19 5L7.91987 5Z"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M15 10.0001L11 14.0001"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M11 10.0001L15 14.0001"
+                    stroke="#fff"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  />
+                </svg>
+              </button>
+              <button
+                type="button"
+                value="ce"
+                aria-label="clear entry"
+                class="btn__result btn__clear"
+              >
+                CE
+              </button>
+            </div>
           </div>
-          <div class="btn">
-            <button
-              type="button"
-              value="7"
-              aria-label="number"
-              class="btn__number"
-            >
-              7
-            </button>
-            <button
-              type="button"
-              value="8"
-              aria-label="number"
-              class="btn__number"
-            >
-              8
-            </button>
-            <button
-              type="button"
-              value="9"
-              aria-label="number"
-              class="btn__number"
-            >
-              9
-            </button>
-            <button
-              type="button"
-              value="/"
-              aria-label="division"
-              class="btn__operator"
-            >
-              /
-            </button>
-            <button
-              type="button"
-              value="mr"
-              aria-label="memory recall"
-              class="btn__result"
-            >
-              MR
-            </button>
-            <button
-              type="button"
-              value="4"
-              aria-label="number"
-              class="btn__number"
-            >
-              4
-            </button>
-            <button
-              type="button"
-              value="5"
-              aria-label="number"
-              class="btn__number"
-            >
-              5
-            </button>
-            <button
-              type="button"
-              value="6"
-              aria-label="number"
-              class="btn__number"
-            >
-              6
-            </button>
-            <button
-              type="button"
-              value="*"
-              aria-label="multiplication"
-              class="btn__operator"
-            >
-              *
-            </button>
-            <button
-              type="button"
-              value="m-"
-              aria-label="memory minus"
-              class="btn__result"
-            >
-              M-
-            </button>
-            <button
-              type="button"
-              value="1"
-              aria-label="number"
-              class="btn__number"
-            >
-              1
-            </button>
-            <button
-              type="button"
-              value="2"
-              aria-label="number"
-              class="btn__number"
-            >
-              2
-            </button>
-            <button
-              type="button"
-              value="3"
-              aria-label="number"
-              class="btn__number"
-            >
-              3
-            </button>
-            <button
-              type="button"
-              value="-"
-              aria-label="subtraction"
-              class="btn__operator"
-            >
-              -
-            </button>
-            <button
-              type="button"
-              value="m+"
-              aria-label="memory plus"
-              class="btn__result"
-            >
-              M+
-            </button>
-            <button
-              type="button"
-              value="0"
-              aria-label="number"
-              class="btn__number"
-            >
-              0
-            </button>
-            <button
-              type="button"
-              value="."
-              aria-label="dot"
-              class="btn__decimal"
-            >
-              .
-            </button>
-            <button
-              type="button"
-              value="="
-              aria-label="calculate"
-              class="btn__operator"
-            >
-              =
-            </button>
-            <button
-              type="button"
-              value="+"
-              aria-label="addition"
-              class="btn__operator"
-            >
-              +
-            </button>
-            <button
-              type="button"
-              value="mc"
-              aria-label="memory clear"
-              class="btn__result"
-            >
-              MC
-            </button>
-            <button
-              type="button"
-              value="sqrt"
-              aria-label="square root"
-              class="btn__operator"
-            >
-              SQRT
-            </button>
-            <button
-              type="button"
-              value="%"
-              aria-label="percentage"
-              class="btn__operator"
-            >
-              %
-            </button>
-            <button
-              type="button"
-              value="+/-"
-              aria-label="plus minus toggles"
-              class="btn__operator"
-            >
-              +/-
-            </button>
-            <button
-              type="button"
-              value="pi"
-              aria-label="pi"
-              class="btn__number"
-            >
-              PI
-            </button>
-            <button
-              type="button"
-              value="ce"
-              aria-label="clear entry"
-              class="btn__result"
-            >
-              CE
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <a href=""></a>
-    </footer>
+        </section>
+      </main>
+      <footer class="footer">
+        <a href="https://github.com/AlgirdasU/Simple-Calculator"></a>
+      </footer>
+    </div>
   </body>
 </html>
